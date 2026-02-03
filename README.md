@@ -7,7 +7,7 @@
 
 
 This repository implements a research-grade League of Legends draft analysis system inspired by the paper  
-**"Winning Is Not Everything: Enhancing Draft Recommendation in MOBA Games"** (arXiv:1806.10130).
+**"The Art of Drafting: A Team-Oriented Hero Recommendation System for Multiplayer Online Battle Arena Games"** (arXiv:1806.10130).
 
 The project combines:
 - A linear win probability model trained on professional drafts
