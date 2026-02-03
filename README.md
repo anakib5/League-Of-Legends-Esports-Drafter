@@ -1,12 +1,19 @@
 # LoL Pro Draft Winrate Modeling and MCTS Draft Recommender
 
-This repository implements a research grade League of Legends draft analysis system inspired by the paper
-"Winning Is Not Everything: Enhancing Draft Recommendation in MOBA Games" (arXiv:1806.10130).
+> **Examples included**
+>
+> This repository includes an `examples` file containing ready-to-run command-line examples
+> demonstrating common workflows such as model training and MCTS draft recommendation.
+
+# LoL Pro Draft Winrate Modeling and MCTS Draft Recommender
+
+This repository implements a research-grade League of Legends draft analysis system inspired by the paper  
+**"Winning Is Not Everything: Enhancing Draft Recommendation in MOBA Games"** (arXiv:1806.10130).
 
 The project combines:
 - A linear win probability model trained on professional drafts
 - A Monte Carlo Tree Search (MCTS / UCT) engine that simulates full drafts with picks and bans
-- Team specific champion priors for realistic professional draft recommendations
+- Team-specific champion priors for realistic professional draft recommendations
 
 Given a partial draft state, the system recommends the best next pick or ban.
 
@@ -14,6 +21,7 @@ Given a partial draft state, the system recommends the best next pick or ban.
 
 ## Repository Structure
 
+```text
 .
 ├── train_draft_model.py
 ├── mcts_lol_draft.py
@@ -27,12 +35,13 @@ Given a partial draft state, the system recommends the best next pick or ban.
 ├── out/
 │   ├── LCK_split_stats.csv
 │   ├── LTA_split_stats.csv
-|   ├── LEC_split_stats.csv
+│   ├── LEC_split_stats.csv
 │   └── LPL_split_stats.csv
 │
 ├── models/
 │   └── lck_2025.joblib
 │
+├── examples.txt
 └── README.md
 
 ---
