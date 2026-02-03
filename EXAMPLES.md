@@ -152,7 +152,7 @@ Draft state: **End of Pick Phase 1, Ban Phase 2 next**
 
 ---
 
-### 2.4 LTA North – After Ban Phase 1
+### 2.4 LTA North – During Ban Phase 1
 Matches **model 1.4**
 
 ```powershell
