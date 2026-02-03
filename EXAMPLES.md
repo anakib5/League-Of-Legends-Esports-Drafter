@@ -32,19 +32,8 @@ python train_draft_model.py lck_games_with_bans.csv `
   --pair-min-count 9999
 ```
 
-### 1.3 Train LCK Split 2 model for a single patch (example: 15.10)
 
-```powershell
-python train_draft_model.py lck_games_with_bans.csv `
-  --out models/lck_split2_15_10.joblib `
-  --tournament-contains "LCK - Split 2 2025" `
-  --patch-filter "15.10" `
-  --seeds 0,1,2,3,4,5,6,7,8,9 `
-  --C 0.3 `
-  --pair-min-count 9999
-```
-
-### 1.4 Train LTA North model for all 2025 games (broad model)
+### 1.3 Train LTA North model for all 2025 games (broad model)
 
 ```powershell
 python train_draft_model.py lta_games_with_bans.csv `
@@ -55,7 +44,7 @@ python train_draft_model.py lta_games_with_bans.csv `
   --pair-min-count 9999
 ```
 
-### 1.5 Train LTA North model for Split 2 2025 only (recommended)
+### 1.4 Train LTA North model for Split 2 2025 only (recommended)
 
 ```powershell
 python train_draft_model.py lta_games_with_bans.csv `
@@ -104,26 +93,9 @@ python mcts_lol_draft.py `
   --show 10
 ```
 
-### 2.3 LCK Split 2 mid draft
-Matches **model 1.2**
 
-```powershell
-python mcts_lol_draft.py `
-  --model models/lck_split2_2025.joblib `
-  --champion-json champion.json `
-  --patch 15.10 `
-  --team-stats out/LCK_split_stats.csv `
-  --split-key LCK_Split2_2025 `
-  --blue-team "KT Rolster" `
-  --red-team "T1" `
-  --blue-picks "Azir" `
-  --red-picks "Orianna|Rakan" `
-  --iters 1600 `
-  --show 10
-```
-
-### 2.4 LTA North broad 2025 draft
-Matches **model 1.4**
+### 2.3 LTA North broad 2025 draft
+Matches **model 1.3**
 
 ```powershell
 python mcts_lol_draft.py `
@@ -138,8 +110,8 @@ python mcts_lol_draft.py `
   --show 10
 ```
 
-### 2.5 LTA North Split 2 early draft
-Matches **model 1.5**
+### 2.4 LTA North Split 2 early draft
+Matches **model 1.4**
 
 ```powershell
 python mcts_lol_draft.py `
@@ -156,8 +128,8 @@ python mcts_lol_draft.py `
   --show 12
 ```
 
-### 2.6 LTA North Split 2 mid draft
-Matches **model 1.5**
+### 2.5 LTA North Split 2 mid draft
+Matches **model 1.4**
 
 ```powershell
 python mcts_lol_draft.py `
