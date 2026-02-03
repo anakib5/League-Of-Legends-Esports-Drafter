@@ -5,7 +5,6 @@
 > This repository includes an `examples` file containing ready-to-run command-line examples
 > demonstrating common workflows such as model training and MCTS draft recommendation.
 
-# LoL Pro Draft Winrate Modeling and MCTS Draft Recommender
 
 This repository implements a research-grade League of Legends draft analysis system inspired by the paper  
 **"Winning Is Not Everything: Enhancing Draft Recommendation in MOBA Games"** (arXiv:1806.10130).
@@ -43,8 +42,6 @@ Given a partial draft state, the system recommends the best next pick or ban.
 │
 ├── examples.txt
 └── README.md
-
----
 
 ## Requirements
 
