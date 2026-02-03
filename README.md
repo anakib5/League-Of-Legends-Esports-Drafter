@@ -42,7 +42,7 @@ Given a partial draft state, the system recommends the best next pick or ban.
 │
 ├── examples.txt
 └── README.md
-
+```
 ## Requirements
 
 This project requires Python 3.9 or newer.
